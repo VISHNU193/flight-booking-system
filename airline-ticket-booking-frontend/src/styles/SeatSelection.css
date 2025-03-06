@@ -1,0 +1,67 @@
+.seat-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f8ff;
+    padding: 20px;
+  }
+  
+  .airplane {
+    position: relative;
+    background-image: url('https://www.google.com/imgres?q=airplane%20seat%20booking%20background%202d%20view%20blank&imgurl=https%3A%2F%2Fwww.shutterstock.com%2Fimage-illustration%2Fseats-plane-map-booking-ui-260nw-2235583445.jpg&imgrefurl=https%3A%2F%2Fwww.shutterstock.com%2Fsearch%2Fplane-seat-screen%3Fimage_type%3Dillustration&docid=KtnjOOmux1TmGM&tbnid=yvwqGKB3yK2JPM&vet=12ahUKEwi1msyw3NOKAxXHyzgGHdV8DcQQM3oECBUQAA..i&w=273&h=280&hcb=2&ved=2ahUKEwi1msyw3NOKAxXHyzgGHdV8DcQQM3oECBUQAA'); /* Path to airplane image */
+    background-size: cover;
+    background-position: center;
+    width: 600px;
+    height: 900px;
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Adjust based on the number of seats per row */
+    gap: 3px;
+  }
+  
+  .seat {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .seat.free {
+    background-color: white;
+    color: black;
+  }
+  
+  .seat.booked {
+    background-color: red;
+    color: white;
+    cursor: not-allowed;
+  }
+  
+  .seat.selected {
+    background-color: green;
+    color: white;
+  }
+  
+  .seat:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+  }
+  
+  .selected-seats {
+    text-align: center;
+  }
+  
+  .selected-seats ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .selected-seats li {
+    font-size: 16px;
+    color: #333;
+  }
+  

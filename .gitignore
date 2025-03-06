@@ -1,0 +1,42 @@
+# General Ignore
+.DS_Store
+Thumbs.db
+*.log
+*.lock
+*.swp
+*.swo
+*.swn
+*.tmp
+
+# Ignore Node.js dependencies and build files (Frontend)
+airline-ticket-booking-frontend/node_modules/
+airline-ticket-booking-frontend/dist/
+airline-ticket-booking-frontend/.env
+airline-ticket-booking-frontend/.vite/
+airline-ticket-booking-frontend/.eslintcache
+airline-ticket-booking-frontend/.parcel-cache
+
+# Ignore dependencies and build files (Spring Boot Backend)
+flight-booking-backend/.mvn/
+flight-booking-backend/target/
+flight-booking-backend/.idea/
+flight-booking-backend/.classpath
+flight-booking-backend/.project
+flight-booking-backend/.settings/
+flight-booking-backend/mvnw
+flight-booking-backend/mvnw.cmd
+flight-booking-backend/.env
+
+# Ignore IntelliJ IDEA files
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Ignore OS-specific files
+*.bak
+*.~*
+*.orig
+
+# Ignore Git-related files (Just in case)
+.git/
